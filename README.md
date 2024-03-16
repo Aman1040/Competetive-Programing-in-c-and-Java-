@@ -1,1 +1,1 @@
-# Competetive-Programing-in-c-and-Java-
+# Competetive-Programing-in-cpp-and-Java-
