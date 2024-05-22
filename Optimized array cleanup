@@ -1,0 +1,31 @@
+Geeks foor geeks
+Optimized Array Cleanup problem 
+
+Input : 
+5
+1 2 3 1 2
+
+Output : 
+2 
+
+code :: 
+class Solution {
+  public:
+    int minMoves(int n, vector<int> &arr) {
+     unordered_map<int,int>mp;
+     int maxx=0;
+     for(auto i:arr)
+     {
+         mp[i]++;
+        
+     }
+     for(auto m:mp)
+     {
+         if(m.second>maxx)
+         {
+             maxx=m.second;
+         }
+     }
+     return maxx;
+    }
+};
